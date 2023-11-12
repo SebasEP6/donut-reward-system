@@ -1,6 +1,14 @@
+import React from "react";
 import { StyledField, StyledInput, StyledLabel } from "./style";
 
-const Field = (props) => {
+type FieldProps = {
+  value: string;
+  setValue: (value: string) => void;
+  name: string;
+  type?: 'text' | 'password';
+};
+
+const Field: React.FunctionComponent<FieldProps> = (props) => {
   const {
     value,
     setValue,

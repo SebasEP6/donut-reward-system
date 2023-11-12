@@ -1,6 +1,11 @@
+import React from "react";
 import { StyledContainer } from "./styles";
 
-const PageContainer = (props) => {
+type PageContainerProps = {
+  children: React.JSX.Element;
+};
+
+const PageContainer: React.FunctionComponent<PageContainerProps> = (props) => {
   const { children } = props;
 
   return (

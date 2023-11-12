@@ -1,4 +1,4 @@
-import { ITheme } from "./interface";
+import { ITheme } from "../interface";
 
 const defaultTheme: ITheme = {
   background: "#CECECE",
