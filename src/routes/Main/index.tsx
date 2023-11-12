@@ -1,13 +1,29 @@
 import { useState } from "react";
+import Button from "../../components/Button";
+import Field from "../../components/Field";
 
 const Main = () => {
-  const [count, setCount] = useState<number>(0);
+  const [username, setUsername] = useState<string>('');
+  const [password, setPassword] = useState<string>('');
 
   return (
     <>
-      <button onClick={() => setCount(count + 1)}>
-        Click {count}
-      </button>
+      <Field
+        value={username}
+        setValue={setUsername}
+        name="Username"
+      />
+
+      <Field
+        value={password}
+        setValue={setPassword}
+        name="Password"
+        type="password"
+      />
+
+      <Button>
+        Login
+      </Button>
     </>
   );
 };

@@ -6,12 +6,12 @@ import {
 import router from './routes';
 import PageContainer from './components/Container';
 import { ThemeProvider } from 'styled-components';
-import { theme } from './themes';
-import './assets/index.css';
+import './assets/styles/index.css';
+import { defaultTheme } from './assets/styles/themes';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={defaultTheme}>
       <PageContainer>
         <RouterProvider router={router} />
       </PageContainer>
