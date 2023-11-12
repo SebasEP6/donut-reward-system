@@ -3,11 +3,11 @@ import { StyledButton } from "./styles";
 const Button = (props) => {
   const {
     children,
-    onclick
+    onClick
   } = props;
 
   return (
-    <StyledButton onClick={onclick}>
+    <StyledButton onClick={onClick}>
       {children}
     </StyledButton>
   );
