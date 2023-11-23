@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import Button from "../../components/Button";
-import Field from "../../components/Field";
+import React, { useState } from 'react';
+import Button from '../../components/Button';
+import Field from '../../components/Field';
 
 const Main: React.FunctionComponent = () => {
   const [username, setUsername] = useState<string>('');
@@ -8,11 +8,7 @@ const Main: React.FunctionComponent = () => {
 
   return (
     <>
-      <Field
-        value={username}
-        setValue={setUsername}
-        name="Username"
-      />
+      <Field value={username} setValue={setUsername} name="Username" />
 
       <Field
         value={password}
@@ -21,9 +17,7 @@ const Main: React.FunctionComponent = () => {
         type="password"
       />
 
-      <Button>
-        Login
-      </Button>
+      <Button>Login</Button>
     </>
   );
 };

@@ -1,5 +1,5 @@
-import React from "react";
-import { StyledButton } from "./styles";
+import React from 'react';
+import { StyledButton } from './styles';
 
 type ButtonProps = {
   children?: React.JSX.Element | string;
@@ -7,16 +7,9 @@ type ButtonProps = {
 };
 
 const Button: React.FunctionComponent<ButtonProps> = (props) => {
-  const {
-    children,
-    onClick
-  } = props;
+  const { children, onClick } = props;
 
-  return (
-    <StyledButton onClick={onClick}>
-      {children}
-    </StyledButton>
-  );
-}
+  return <StyledButton onClick={onClick}>{children}</StyledButton>;
+};
 
 export default Button;

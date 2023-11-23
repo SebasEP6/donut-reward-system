@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledContainer = styled.div`
   display: flex;
@@ -8,5 +8,5 @@ export const StyledContainer = styled.div`
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-  background-color: ${props => props.theme.background}
+  background-color: ${(props) => props.theme.background};
 `;

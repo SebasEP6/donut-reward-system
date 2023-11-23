@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledField = styled.div`
   display: flex;
@@ -17,8 +17,8 @@ export const StyledInput = styled.input`
 
   background: none;
 
-  font-size: .9rem;
+  font-size: 0.9rem;
 
   border: none;
-  border-bottom: 1px solid ${props => props.theme.borderColor}
+  border-bottom: 1px solid ${(props) => props.theme.borderColor};
 `;

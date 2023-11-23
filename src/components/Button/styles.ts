@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledButton = styled.button`
   padding: 8px 12px;
@@ -12,14 +12,14 @@ export const StyledButton = styled.button`
 
   cursor: pointer;
 
-  color: ${props => props.theme.buttonTextColor};
-  background-color: ${props => props.theme.buttonColor};
+  color: ${(props) => props.theme.buttonTextColor};
+  background-color: ${(props) => props.theme.buttonColor};
 
   &:hover {
-    background-color: ${props => props.theme.buttonHoverColor};
+    background-color: ${(props) => props.theme.buttonHoverColor};
   }
 
   &:active {
-    background-color: ${props => props.theme.buttonActiveColor};
+    background-color: ${(props) => props.theme.buttonActiveColor};
   }
 `;
