@@ -2,7 +2,12 @@ import React from 'react';
 import Reward from '../Reward';
 import { StatusTypes, getStatusColor } from '../../utils/status';
 import Label from '../Label';
-import { FooterContainer, RewardContainer, StyledContainer } from './styles';
+import {
+  BodyContainer,
+  FooterContainer,
+  RewardContainer,
+  StyledContainer,
+} from './styles';
 import { getCapitalizedWord } from '../../utils/helpers';
 import TitleText from '../Text/Title';
 import LightTitleText from '../Text/LightTitle';
@@ -25,7 +30,9 @@ const Card: React.FunctionComponent<CardProps> = ({
       <Reward qty={qty} />
     </RewardContainer>
 
-    <TitleText>{task}</TitleText>
+    <BodyContainer>
+      <TitleText>{task}</TitleText>
+    </BodyContainer>
 
     <FooterContainer>
       <Label color={getStatusColor[status]}>{getCapitalizedWord(status)}</Label>

@@ -17,6 +17,12 @@ export const RewardContainer = styled.div`
   align-self: flex-end;
 `;
 
+export const BodyContainer = styled.div`
+  min-height: 64px;
+  display: flex;
+  align-items: flex-start;
+`;
+
 export const FooterContainer = styled.div`
   display: flex;
   gap: 16px;
