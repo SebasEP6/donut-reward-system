@@ -7,4 +7,5 @@
   outline: none;
   transition: all ease 400ms;
   font-family: 'Quicksand', sans-serif;
+  user-select: none;
 }

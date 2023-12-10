@@ -10,6 +10,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'plugin:jsx-a11y/recommended',
+    'plugin:testing-library/react'
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parserOptions: {
@@ -18,7 +19,7 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: ['prettier', 'jest'],
+  plugins: ['prettier', 'testing-library'],
   settings: {
     'import/resolver': {
       node: {
@@ -54,6 +55,10 @@ module.exports = {
     ],
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
+    'testing-library/await-async-queries': 'error',
+		'testing-library/no-await-sync-queries': 'error',
+		'testing-library/no-debugging-utils': 'warn',
+		'testing-library/no-dom-import': 'off',
   },
   'prefer-destructuring': [
     'error',
